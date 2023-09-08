@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h2>Commit History</h2>
+      <h2 className={styles.title}>Commit History</h2>
       {error && <Error error={error} />}
       {isLoading && <Loading />}
       {data && <CardList data={data} />}

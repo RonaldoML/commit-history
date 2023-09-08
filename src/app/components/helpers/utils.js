@@ -1,4 +1,4 @@
 export const parseDate = (date) => {
   const newDate = new Date(date);
-  return `on ${newDate.toLocaleDateString()}, at ${newDate.toLocaleTimeString()}`
+  return `${newDate.toLocaleDateString()}, at ${newDate.toLocaleTimeString()}`
 };
