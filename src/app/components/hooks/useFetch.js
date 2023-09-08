@@ -15,7 +15,6 @@ export const useFetch = (url) => {
         setIsLoading(true);
         const result = await fetch(url);
         const resp = await result.json();
-        console.log(resp)
         if (resp.ok) {
           setData(resp.data);
         } else {
