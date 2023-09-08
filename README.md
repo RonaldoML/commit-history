@@ -23,7 +23,7 @@ cd commit-history
 npm install
 ```
 
-5. Create a .env file in the root directory and add your [github access token] (https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) in the var:
+5. Create a .env file in the root directory and add your [github access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) in the var:
 
 ```bash
 GITHUB_TOKEN=
