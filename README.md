@@ -2,6 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Make sure you have installed the last [Node version](https://nodejs.org/en/download)
+It is critical for the app to work properly.
+
 1. First, clone the repo
 
 ```bash
