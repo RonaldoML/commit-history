@@ -13,9 +13,4 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   padding: 20px;
-
-  --light-black: #24292f;
-
-  --grey: #8b949e;
-  --light-grey: #c4c7ca;
 }

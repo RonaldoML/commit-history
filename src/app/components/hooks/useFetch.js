@@ -15,6 +15,7 @@ export const useFetch = (url) => {
         setIsLoading(true);
         const result = await fetch(url);
         const resp = await result.json();
+        console.log(resp)
         if (resp.ok) {
           setData(resp.data);
         } else {
@@ -29,9 +30,11 @@ export const useFetch = (url) => {
         setIsLoading(false);
       }
     }
-    setError(null);
-    setData(null);
     fetchData();
+    return () => {
+      setError(null);
+      setData(null);
+    }
   }, [url])
 
 
