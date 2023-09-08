@@ -24,7 +24,7 @@ export const useFetch = (url) => {
         }
       } catch (_) {
         setData(null);
-        setError(CONSTANTS.SOMETHING_WENT_WRONG)
+        setError(CONSTANTS.SOMETHING_WENT_WRONG);
       } finally {
         setIsLoading(false);
       }
