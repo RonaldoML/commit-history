@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 
 import { CONSTANTS } from '../helpers/constants';
+import { parseDate } from '../helpers/utils';
 
 import styles from './card.module.css';
 
@@ -18,7 +19,7 @@ export const Card = ({ commit }) => {
           <Image src={avatar} alt={AVATAR_ALT} width={30} height={30} />
           <h3><a href={url} target="_blank" rel="noopener noreferrer">{name}</a></h3>
         </div>
-        <p className={styles.date}>{date}</p>
+        <p className={styles.date}>{parseDate(date)}</p>
       </div>
       <p className={styles.email}>{email}</p>
       <div className={styles.comment_container}>

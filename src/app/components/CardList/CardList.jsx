@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Card } from '../Card/card'
+import { Card } from '../Card/Card'
 
 export const CardList = ({ data }) => {
   return (
@@ -15,5 +15,5 @@ export const CardList = ({ data }) => {
 };
 
 CardList.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
 };
