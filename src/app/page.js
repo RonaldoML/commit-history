@@ -1,10 +1,18 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client"
+import { CardList } from './components/CardList/CardList';
+
+import { useFetch } from './components/hooks/useFetch';
+
+import styles from './page.module.css';
 
 export default function Home() {
+  const url = '/api/commit';
+  const [, data,] = useFetch(url);
+
   return (
     <main className={styles.main}>
-      <h1>Commit History</h1>
+      <h2>Commit History</h2>
+      {data && <CardList data={data} />}
     </main>
   )
 }
