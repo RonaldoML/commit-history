@@ -1,5 +1,5 @@
 .card {
-  border-bottom: 1px solid #24292f;
+  border-bottom: 1px solid --light-black;
   padding: 20px;
 }
 
@@ -19,16 +19,16 @@
 }
 
 .title_container h3 {
-  color: #8b949e;
+  color: --grey;
 }
 
 .title_container h3 a {
-  color: #c4c7ca;
+  color: --light-grey;
   text-decoration: inherit;
 }
 
 .title_container h3 a:hover {
-  color: #8b949e;
+  color: --grey;
   text-decoration: inherit;
 }
 
@@ -40,13 +40,13 @@
 }
 
 .date {
-  color: #8b949e;
+  color: --grey;
   font-size: 11px;
   text-align: right;
 }
 
 .email {
-  color: #c4c7ca;
+  color: --light-grey;
   font-size: 12px;
   text-align: left;
   margin: 0;
@@ -63,7 +63,7 @@
   font-size: small;
 
   margin-right: 5px;
-  color: #8b949e;
+  color: --grey;
 }
 
 .comment_message {
